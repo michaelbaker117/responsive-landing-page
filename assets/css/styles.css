@@ -1,4 +1,115 @@
 /* General Styles */
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+header img {
+  width: 300px;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*h2,input,button*/
+h2 {
+  font-size: 22pt;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 250px;
+}
+
+button {
+  width: 150px;
+  background-color: #f1c40f;
+}
+
+/*materials, shipping, Q/A section*/
+.images img {
+  width: 80px;
+}
+.middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.images {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.section1 {
+  width: 80%;
+  display: block;
+  font-size: 16pt;
+}
+video {
+  width: 600px;
+}
+.video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*product prices*/
+.prices {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.price1 {
+  border-style: solid;
+  text-align: center;
+}
+.price2 {
+  border-style: solid;
+  text-align: center;
+}
+.price3 {
+  border-style: solid;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  background-color: #ddd;
+  display: block;
+  text-align: right;
+}
+
 /* Apply to all sizes */
 *, *:before, *:after {
   box-sizing: border-box;
@@ -6,5 +117,20 @@
 
 
 /* Add Breakpoints Here */
+@media only screen and (min-width: 300px) and (max-width: 960px) {
+  header,
+  nav,
+  .prices {
+    flex-direction: column;
+  }
+  h2 {
+    text-align: center;
+  }
+  .section1 {
+    text-align: center;
+  }
+  .images img {
+    width: 0px;
+  }
+}
 /* Apply to certain size and above */
-
